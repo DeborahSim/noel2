@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900');
+
+/* RESET */
+
+/* Sélection de toutes les balises pour remise à zéro des marges */
+*{
+	margin:	0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	font-size: 1.5rem;
+}
+ 
+
+/*
+END RESET
+*/
+
+/* Formulaire */
+
+label {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+}
+
+input, select {
+	display: block;
+	width: 100%;
+	padding: 1.5rem;
+	border: .1rem solid #ccc;
+    border-radius: .4rem;
+    margin-bottom: 2rem;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	padding: 1.5rem;
+	border: .1rem solid #ccc;
+    border-radius: .4rem;
+    margin-bottom: 2rem;
+}
+
+span {
+	color: red;
+}
+
+.panel {
+	border:.1rem solid #ccc;
+	margin:1.5rem;
+	padding:  3rem 3rem 2rem 3rem;
+	border-radius: .4rem;
+}
+
+.form-control {
+	color: #010101;
+	text-align: left;
+}
+
+.photo {
+	height: 6rem;
+	background-color: #eae7e7;
+}
+
+.button {
+	margin:auto;
+	width: 15rem;
+	font-weight:700;
+	padding:0;
+	color:white;
+	background-color:#C01E27;
+}
+
+
+/* CSS page d'accueil */
+
+
+
+
+
+
+
+
+/* CSS login */
+
+	/* Login - Fenêtre Modal */
+	.cModal {
+	  position: fixed;
+	  z-index: 99999;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  background: rgba(0, 0, 0, 0.8);
+	  opacity:0;
+	  pointer-events: none;
+	}
+	.cModal:target {
+	  opacity:1;
+	  pointer-events: auto;
+	}
+	.cModal > div {
+	  max-width: 40rem;
+	  position: relative;
+	  margin: 10% auto;
+	  padding: .8rem .8rem .8rem .8rem;
+	  border-radius: .2rem;
+	  background: #fff;
+	}
+
+	.p_login {
+		margin: auto;
+		width: 80%;
+	}
+
+	.button_login {
+		font-size: 1.1rem;
+		border:.1rem solid #ccc;	
+		border-radius: .4rem;
+		background-color: white;
+		padding: 0.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.h2_login {
+		margin-bottom: 2rem;
+	}
+
+	.input_login {
+		display: block;
+		width: 100%;
+
+	}
+
+
+/* CSS Créer un événement */
+
+
+
+
+
+
+
+
+
+
+
+/*
+ RESPONSIVE DESIGN
+*/
+
+@media screen and (min-width: 700px){
+
+
+	.panel {
+		width: 80rem;
+		margin:1.5rem auto;
+	}
+
+	.form-control {
+		color: #010101;
+		text-align: right;
+}
+
+	.nostar{
+		padding-right: 1.1rem;
+	}
+
+	input, select, textarea {
+		display: inline-block;
+		width: 60%;
+	}
+
+	p {
+		vertical-align: middle;
+	}
+
+/* Responsive Créer un événement */
+    .blocLeft {
+    width: 60%;
+    height: 36rem;
+    float: left;
+    text-align: right;
+    }
+
+    .blocLeft h2 {
+        text-align: left;
+        margin-left: 17rem;
+    }
+
+    .blocAside {
+        width: 30%;
+        height: 36rem;
+        float: right;
+        border-left: 1px solid black;
+    }
+
+    #description {
+        width: 30%;
+        height: 10rem;
+        margin-top: 7rem;
+    }
+
+    button {
+        display: block;
+        margin: auto;
+        margin-top: 4rem;
+        padding: .5rem;
+    }
+
+    .blocContent {
+        clear: both;
+        height: 36rem;
+        position: relative;
+    }
+
+    .blocContent form{
+        margin-left: 100rem;
+        padding-top: 12rem;
+    }
+
+    .blocContent form textarea {
+        width: 30%;
+        height: 10rem;
+    }
+
+    .photoSoiree {
+        display: block;
+        width: 30rem;
+        height: 30rem;
+        margin-left: 10rem;
+        float: left;
+        border: 1px solid #ce212b;
+    }
+
+    .photoOrganisateur {
+        width: 10rem;
+        height: 10rem;
+        margin: auto;
+        border: 1px solid #ce212b;
+    }
+
+    .map {
+        position: absolute;
+        top: 5rem;
+        left: 10rem;
+        height: 25rem;
+        width: 50rem;
+        border: 1px solid #ce212b;
+    }
+
+    .events {
+        width: 750
+    }
+
+
+	
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .photoSoiree {
+        display: block;
+        width: 15rem;
+        height: 15rem;
+        margin-left: 2rem;
+        float: left;
+        border: 1px solid #ce212b;
+        margin-bottom: 5rem;
+    }
+
+    .photoOrganisateur {
+        width: 10rem;
+        height: 10rem;
+        margin: auto;
+        border: 1px solid #ce212b;
+    }
+
+    .map {
+        height: 25rem;
+        width: 90%;
+        border: 1px solid #ce212b;
+        margin: 2rem auto;
+    }
+    
+    textarea {
+        display: block;
+        width: 85%;
+        padding: 1.5rem;
+        border: .1rem solid #ccc;
+        border-radius: .4rem;
+        margin-bottom: 2rem;
+        margin: auto;
+    }
+    
+    .blocLeft {
+        text-align: left;
+        margin: 2rem auto;
+    }
+    
+    .blocLeft h2 {
+	    text-align: center;
+    }
+    
+    .blocLeft p {
+        margin-left: 20rem;
+    }
+    
+    .blocAside {
+	    margin: 2rem auto;
+    }
+    
+    .blocContent {
+        margin: 2rem auto;
+    }
+}
